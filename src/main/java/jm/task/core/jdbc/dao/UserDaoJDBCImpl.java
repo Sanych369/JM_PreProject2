@@ -14,7 +14,7 @@ public class UserDaoJDBCImpl implements UserDao {
         this.connection = connection;
     }
 
-    private static Logger logger = Logger.getLogger(UserDaoJDBCImpl.class.getName());
+    private final static Logger logger = Logger.getLogger(UserDaoJDBCImpl.class.getName());
 
     public void createUsersTable() {
         try {
